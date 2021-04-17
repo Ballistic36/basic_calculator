@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&display=swap');
+
+@mixin font1 {
+	font-family: 'Rubik', sans-serif;
+}
+
+$white: #dfebcb;
+$black: #161616;
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+	height: 100vh;
+	@include font1();
+	color: $black;
+	// background: linear-gradient(90deg, #f2709c, #ff9472);
+	background: linear-gradient(90deg, #9d50bb, #6e48aa);
+}
+
+.calculator {
+	width: 400px;
+	background: rgba(223, 235, 203, 0.6);
+
+	.display {
+		min-height: 120px;
+		text-align: right;
+		background: $black;
+
+		.prev-num {
+			padding: 1rem 0.5rem 0.5rem 0.5rem;
+			color: $white;
+			font-weight: 400;
+		}
+
+		.current-num {
+			padding: 1rem 0.5rem 0.5rem 0.5rem;
+			color: $white;
+			font-weight: 500;
+		}
+	}
+
+	.button-section {
+		display: grid;
+		grid-template-columns: repeat(4, 100px);
+		grid-template-rows: repeat(5, 100px);
+		grid-template-areas: '. . clear delete' 'seven eight nine divide' 'four five six multiply' 'one two three add' 'subtract zero decimal equal';
+
+		button {
+			border: 2px solid $white;
+			background-color: rgba(67, 167, 214, 0.3);
+			transition: all 300ms ease;
+			color: $black;
+			font-size: 2rem;
+
+			&:hover {
+				cursor: pointer;
+				background-color: rgb(67, 167, 214);
+			}
+		}
+
+		.clear {
+			grid-area: clear;
+		}
+
+		.delete {
+			grid-area: delete;
+		}
+
+		.seven {
+			grid-area: seven;
+		}
+
+		.eight {
+			grid-area: eight;
+		}
+
+		.nine {
+			grid-area: nine;
+		}
+
+		.divide {
+			grid-area: divide;
+		}
+
+		.four {
+			grid-area: four;
+		}
+
+		.five {
+			grid-area: five;
+		}
+
+		.six {
+			grid-area: six;
+		}
+
+		.multiply {
+			grid-area: multiply;
+		}
+
+		.one {
+			grid-area: one;
+		}
+
+		.two {
+			grid-area: two;
+		}
+
+		.three {
+			grid-area: three;
+		}
+
+		.add {
+			grid-area: add;
+		}
+
+		.subtract {
+			grid-area: subtract;
+		}
+
+		.zero {
+			grid-area: zero;
+		}
+
+		.decimal {
+			grid-area: decimal;
+		}
+
+		.equal {
+			grid-area: equal;
+		}
+	}
+}

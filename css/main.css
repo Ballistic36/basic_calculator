@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Rubik', sans-serif;
+  color: #161616;
+  background: -webkit-gradient(linear, left top, right top, from(#9d50bb), to(#6e48aa));
+  background: linear-gradient(90deg, #9d50bb, #6e48aa);
+}
+
+.calculator {
+  width: 400px;
+  background: rgba(223, 235, 203, 0.6);
+}
+
+.calculator .display {
+  min-height: 120px;
+  text-align: right;
+  background: #161616;
+}
+
+.calculator .display .prev-num {
+  padding: 1rem 0.5rem 0.5rem 0.5rem;
+  color: #dfebcb;
+  font-weight: 400;
+}
+
+.calculator .display .current-num {
+  padding: 1rem 0.5rem 0.5rem 0.5rem;
+  color: #dfebcb;
+  font-weight: 500;
+}
+
+.calculator .button-section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (100px)[4];
+      grid-template-columns: repeat(4, 100px);
+  -ms-grid-rows: (100px)[5];
+      grid-template-rows: repeat(5, 100px);
+      grid-template-areas: '. . clear delete' 'seven eight nine divide' 'four five six multiply' 'one two three add' 'subtract zero decimal equal';
+}
+
+.calculator .button-section button {
+  border: 2px solid #dfebcb;
+  background-color: rgba(67, 167, 214, 0.3);
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+  color: #161616;
+  font-size: 2rem;
+}
+
+.calculator .button-section button:hover {
+  cursor: pointer;
+  background-color: #43a7d6;
+}
+
+.calculator .button-section .clear {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: clear;
+}
+
+.calculator .button-section .delete {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: delete;
+}
+
+.calculator .button-section .seven {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: seven;
+}
+
+.calculator .button-section .eight {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: eight;
+}
+
+.calculator .button-section .nine {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: nine;
+}
+
+.calculator .button-section .divide {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  grid-area: divide;
+}
+
+.calculator .button-section .four {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: four;
+}
+
+.calculator .button-section .five {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: five;
+}
+
+.calculator .button-section .six {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: six;
+}
+
+.calculator .button-section .multiply {
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
+  grid-area: multiply;
+}
+
+.calculator .button-section .one {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: one;
+}
+
+.calculator .button-section .two {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: two;
+}
+
+.calculator .button-section .three {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: three;
+}
+
+.calculator .button-section .add {
+  -ms-grid-row: 4;
+  -ms-grid-column: 4;
+  grid-area: add;
+}
+
+.calculator .button-section .subtract {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: subtract;
+}
+
+.calculator .button-section .zero {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  grid-area: zero;
+}
+
+.calculator .button-section .decimal {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+  grid-area: decimal;
+}
+
+.calculator .button-section .equal {
+  -ms-grid-row: 5;
+  -ms-grid-column: 4;
+  grid-area: equal;
+}
+/*# sourceMappingURL=main.css.map */
