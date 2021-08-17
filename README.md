@@ -1,6 +1,6 @@
 # JavaScript Calculator
 
-_**Note** Primary code located in main.js_
+_**Note:** Primary code located in main.js_
 
 ## Technology/Features
 
